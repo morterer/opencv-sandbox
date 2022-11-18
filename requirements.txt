@@ -1,0 +1,3 @@
+mediapipe==0.9.0
+particlepy==1.1.0
+pygame==2.1.2
