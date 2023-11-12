@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+# demo that tracks hands
 import cv2
 import time
 import mediapipe as mp
@@ -48,20 +48,3 @@ while True:
 
     cv2.imshow("Image", img)
     cv2.waitKey(1)
-
-
-# The above code will pop up a window if any webcam is connected to your PC and also 
-# shows the frames per second (fps) on the top left corner of the output window.
-
-# cap = cv2.VideoCapture(0)
-# pTime = 0
-# while True:
-#     success, img = cap.read()
-#     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-#     cTime = time.time()
-#     fps = 1 / (cTime - pTime)
-#     pTime = cTime
-#     cv2.putText(img, f'FPS:{int(fps)}', (20, 70), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-#     print(f'FPS:{int(fps)}')
-#     cv2.imshow("Test", img)
-#     cv2.waitKey(1)
